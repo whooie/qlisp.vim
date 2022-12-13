@@ -100,6 +100,10 @@ syn keyword     qlispOperator leq
 syn match       qlispOperator "\v(\s|[(]|^)@<=\<\=(\s|[)]|$)@="
 syn keyword     qlispOperator mod
 syn match       qlispOperator "\v(\s|[(]|^)@<=\%(\s|[)]|$)@="
+syn keyword     qlispOperator shl
+syn match       qlispOperator "\v(\s|[(]|^)@<=\<\<(\s|[)]|$)@="
+syn keyword     qlispOperator shr
+syn match       qlispOperator "\v(\s|[(]|^)@<=\>\>(\s|[)]|$)@="
 
 " boolean accumulators
 syn keyword     qlispBuiltin all
@@ -123,9 +127,9 @@ syn match       qlispBuiltin "\v(\s|[(]|^)@<=\#(\s|[)]|$)@="
 syn keyword     qlispBuiltin fold
 syn match       qlispBuiltin "\v(\s|[(]|^)@<=\@\.(\s|[)]|$)@="
 syn keyword     qlispBuiltin min
-syn match       qlispBuiltin "\v(\s|[(]|^)@<=\<\<(\s|[)]|$)@="
+syn match       qlispBuiltin "\v(\s|[(]|^)@<=\<\:(\s|[)]|$)@="
 syn keyword     qlispBuiltin max
-syn match       qlispBuiltin "\v(\s|[(]|^)@<=\>\>(\s|[)]|$)@="
+syn match       qlispBuiltin "\v(\s|[(]|^)@<=\:\>(\s|[)]|$)@="
 syn keyword     qlispBuiltin select-by
 syn match       qlispBuiltin "\v(\s|[(]|^)@<=\*\@\.(\s|[)]|$)@="
 
